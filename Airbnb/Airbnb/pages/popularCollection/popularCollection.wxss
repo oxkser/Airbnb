@@ -1,0 +1,64 @@
+/* pages/popularCollection/popularCollection.wxss */
+/* pages/popularCollection/popularCollection.wxss */
+.title{
+  height:130rpx;
+  width: 100%;
+  font-size: 32rpx;
+  position: fixed;
+  top: 0;
+  background-color: white;
+}
+.return{
+  position: absolute;
+  top: 35%;
+
+  left: 40rpx;
+}
+.collect{
+  line-height: 140rpx;
+  text-align: center;
+  width: 100%;
+}
+.cover{
+  padding-top: 60rpx;
+  height: 60rpx;
+}
+.popular{
+  width: 700rpx;
+  margin: 50rpx 25rpx;
+}
+.popCityTitle{
+  font-size: 46rpx;
+  font-weight: bold;
+  color: #484848;
+}
+.popCityIntroduce{
+  font-size: 32rpx;
+  color: #484848;
+  padding:20rpx 0;
+}
+.popContent{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.popBlock{
+  width:340rpx;
+  height: 310rpx;
+  margin-top: 30rpx;
+  border: 2rpx solid gainsboro;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.popBlock image{
+  width: 100%;
+  height: 220rpx;
+  border-top-left-radius: 20rpx;
+  border-top-right-radius: 20rpx;
+
+}
+.popBlockCity{
+  color: #484848;
+  padding:10rpx 30rpx;
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {},
+  "navigationBarBackgroundColor": "#ff0",
+  "navigationBarTitleText": "房屋详情",
+  "navigationBarTextStyle": "black",
+  "navigationStyle": "custom"
+}

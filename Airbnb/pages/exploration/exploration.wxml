@@ -1,0 +1,88 @@
+<!--pages/exploration/exploration.wxml-->
+<!--pages/exploration/exploration.wxml-->
+<view class='exploration'>
+  <view class='nav'>
+    <view class='nav-top'>
+      <view class='input'>
+        <image src='../images/search.png' />
+        <navigator url='../navsearch/navsearch'>
+        <input class='nav-input' placeholder='成都市……'></input>
+        </navigator>
+      </view>
+      <view class='map'>
+        <image src='../images/map.png' />
+        <view class='map-font'>地图</view>
+      </view>
+    </view>
+    <view class='nav-bottom'>
+      <view class='people-number'>
+        <view class='nav-bottom-font'>人数</view>
+        <view class='Triangle-top'></view>
+      </view>
+      <view class='location'>
+        <view class='nav-bottom-font'>位置</view>
+        <view class='Triangle-top'></view>
+      </view>
+      <view class='price'>
+        <view class='nav-bottom-font'>价格</view>
+        <view class='Triangle-top'></view>
+      </view>
+      <view class='more'>
+        <view class='nav-bottom-font'>更多</view>
+        <view class='Triangle-top'></view>
+      </view>
+    </view>
+  </view>
+  <view class='box'></view>
+
+  <view class='type-content'>
+    <view class='type-content-block'>整个房源</view>
+    <view class='type-content-block'>特惠房源</view>
+    <view class='type-content-block'>超赞房东</view>
+    <view class='type-content-block'>闪订</view>
+    <view class='type-content-block'>家庭出游</view>
+  </view>
+
+  <view class='house'>
+    <view class='house-title'>300多处住宿</view>
+    <block wx:for="{{house}}">
+    <view class='house-message'>
+      <view class='house-picture'>
+        <swiper indicator-dots='true' indicator-active-color='white' circular='true'>
+        <block wx:for="{{picture[index]}}">
+          <swiper-item>
+            <image mode='widthFix' src='{{item.picture}}' bindtap='House'/>
+          </swiper-item>
+          </block>
+        </swiper>
+        <view class='house-address'>
+          <view class='house-one'>{{item.housemessage}}</view>
+          <view class='house-two'>{{item.introduce}}</view>
+          <view class='house-one'>
+            <view class='house-block'>{{item.houselogo}}</view>
+            <view class='house-block'>{{item.houselogo2}}</view>
+          </view>
+          <view class='house-evalute'>
+            <image src='../images/start.png' />
+            <view class='ev-number'>{{item.number}}条评价</view>
+          </view>
+        </view>
+        <view class='house-price'>
+          <view class='price'>
+            <view>￥{{item.nowprice}}</view>
+            <view class='ago-price'>￥{{item.oldprice}}</view>
+            <view class='ago-price-'>每晚</view>
+          </view>
+          <view class='gou'>
+          <image src='../images/gou.png'/>
+          <view>{{item.discount}}</view>
+          </view>
+        </view>
+          <view class='Landlord '><image src='{{item.landlord}}' /></view>
+      </view>
+    </view>
+    </block>
+  </view>
+</view>
+
+

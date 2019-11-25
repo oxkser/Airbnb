@@ -1,0 +1,21 @@
+<!--pages/popularCollection/popularCollection.wxml-->
+<view class='title'>
+  <text class="return" bindtap="return">返回</text>
+  <view class="collect">收藏</view>
+</view>
+
+<view class='cover'></view>
+<view class='popular'>
+  <view class='popCityTitle'>热门城市收藏榜</view>
+  <view class='popCityIntroduce'>精选每个城市收藏次数最多的20个热门房源</view>
+  <view class='popContent'>
+    <block wx:for="{{city}}">
+        <view class='popBlock' bindtap='req'>
+          <navigator url='../popCitymore/popCitymore?id={{index}}'>
+            <image src='{{item.img}}'></image>
+            <view class='popBlockCity'>{{item.name}}</view>
+          </navigator>
+        </view>
+    </block>
+  </view>
+</view>

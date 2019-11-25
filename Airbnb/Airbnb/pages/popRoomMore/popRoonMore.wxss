@@ -1,0 +1,223 @@
+/* pages/popRoomMore/popRoonMore.wxss */
+/* pages/popRoomMore/popRoomMore.wxss */
+.bor {
+  width: 60rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0 0 6rpx 6rpx #e6e6e6;
+  border-radius: 50%;
+  position: fixed;
+  top: 40rpx;
+  left: 20rpx;
+}
+
+.bor image {
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.top {
+  width: 100%;
+  height: 500rpx;
+}
+
+.swiper {
+  width: 100%;
+  height: 500rpx;
+}
+
+.top image {
+  width: 100%;
+  height: 500rpx;
+}
+
+.content {
+  width: 670rpx;
+  margin: 30rpx 40rpx;
+  box-sizing: border-box;
+  /* border: 1px solid #F1F1F1; */
+  position: relative;
+}
+
+.checkIn {
+  font-size: 28rpx;
+  padding-bottom: 30rpx;
+  border-bottom: 1px solid #f1f1f1;
+  box-sizing: border-box;
+}
+
+.save {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: #fff;
+  position: absolute;
+  top: -80rpx;
+  right: 160rpx;
+  border: 1px solid #f1f1f1;
+}
+
+.share {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  background-color: #fff;
+  position: absolute;
+  top: -80rpx;
+  right: 20rpx;
+  border: 1px solid #f1f1f1;
+}
+
+.contentTitle {
+  font-size: 28rpx;
+  padding: 20rpx 0rpx;
+}
+
+.contentIntroduce {
+  font-size: 18px;
+}
+
+.tags {
+  width: 700rpx;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-left: 30rpx;
+  font-size: 14px;
+}
+
+.tags .score {
+  width: 300rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  color: #467326;
+  border-radius: 30rpx;
+  background-color: #ecf7ec;
+  margin: 6rpx;
+}
+
+.tags .nice {
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  background-color: #f6f3eb;
+  margin: 6rpx;
+  color: #684914;
+}
+
+.tags .tagsItem {
+  width: 160rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 30rpx;
+  background-color: #f3f3f3;
+  margin: 6rpx;
+  color: #484848;
+}
+.person {
+  width: 100%;
+  height: 60rpx;
+  padding:30rpx;
+}
+.priceDisCount{
+  width: 690rpx;
+  margin:30rpx;
+  height: 140rpx;
+  border: 3px solid #E3F0F1;
+  background-color: #F4F9F9;
+  font-size: 14px;
+  border-radius: 10rpx;
+  padding-top: 24rpx;
+  padding-left: 120rpx;
+  box-sizing: border-box;
+}
+.priceDisCountOne{
+  font-weight: bold;
+}
+.roomIntroduce{
+  width: 300rpx;
+  height: 240rpx;
+  border: 1px solid #e0d9d9;
+  margin: 30rpx;
+  padding: 30rpx;
+  border-radius: 20rpx;
+}
+.roomIntroduce-bedImage{
+  width: 100rpx;
+  height: 100rpx;
+}
+.roomIntroduce-room,.roomIntroduce-bed{
+  padding: 20rpx;
+}
+.roomPosition{
+  margin: 40rpx 30rpx;
+}
+.readMore{
+  color: #138488;
+  margin: 20rpx 30rpx;
+  padding-bottom: 40rpx;
+  border-bottom: 1px solid #e0d9d9;
+}
+.roomTips{
+  width: 690rpx;
+  margin:30rpx;
+  border-bottom: 1px solid #e0d9d9;
+}
+.roomTips .roomTipsText{
+  width: 620rpx;
+  height: 80rpx;
+  margin:40rpx;
+}
+.roomTips .roomTipsText text{
+  font-weight: bold;
+  padding-right: 20rpx;
+}
+.bottomFixed{
+  width: 700rpx;
+  height: 180rpx;
+  border-top: 1px solid #e0d9d9;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  background-color: white;
+  padding:10rpx 30rpx;
+}
+.bottomFixed-left{
+  width: 240rpx;
+  padding: 16rpx;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.bottomFixed-left .bottomFixed-left-price{
+  font-weight: bold;
+}
+.bottomFixed-left-priceMore{
+  color:#17868B;
+}
+.bottomFixed-left-item{
+  display: flex;
+}
+.bottomFixed-left-item image{
+  width: 140rpx;
+  height: 40rpx;
+}
+.bottomFixed-right{
+  width: 300rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #FF5A5F;
+  border-radius: 8rpx;
+  color: white;
+  margin: 16rpx;
+}
+.cover{
+  width: 100%;
+  height: 170rpx;
+}

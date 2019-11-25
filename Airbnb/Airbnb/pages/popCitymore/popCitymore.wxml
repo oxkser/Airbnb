@@ -1,0 +1,146 @@
+<!--pages/popCitymore/popCitymore.wxml-->
+<!--pages/popCitymore/popCitymore.wxml-->
+<view class='all'>
+  <view class='title'>
+   <text class="return" bindtap="return">返回</text>
+    <view class="collect">房源排行榜</view>
+  </view>
+
+  <view class='cover'></view>
+  <view class='top'>
+    <image src='../../image/popCity/shanghai.png'></image>
+    <view class='top-title'>上 海 热 门 收 藏 榜</view>
+    <view class='top-introduce'>精选全上海收藏次数最多的20个房源</view>
+  </view>
+  <view class='content'>
+    <view class='content-title'>收藏热门房源</view>
+    <view class='content-introduce'>轻点心形图标即可收藏心仪房源，收藏后还能与好友投票选房</view>
+    <view class='topRoom'>
+      <navigator url='../popRoomMore/popRoonMore?id={{index}}'>
+        <swiper class='swiper' indicator-dots='true'>
+          <swiper-item>
+            <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/4ff5df17-1b69-4b3d-90fa-e7b76f09949f.jpg?aki_policy=large" class='popRoomImgs' />
+          </swiper-item>
+          <swiper-item>
+            <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/d9408889-273a-45fb-a6ff-7012930be9af.jpg?aki_policy=large" class='popRoomImgs' />
+          </swiper-item>
+          <swiper-item>
+            <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/3d382fd8-57eb-4abf-999d-1dc4ba403bba.jpg?aki_policy=large" class='popRoomImgs' />
+          </swiper-item>
+        </swiper>
+        <image src='../../image/popRoom/like.png' class='popRoomKeep'></image>
+        <view class='popRoomTop'>TOP1</view>
+        <image class='popRoomLandlord' src='https://z1.muscache.cn/im/pictures/c8938b55-0428-4e67-b9e0-ea8078ee3f5a.jpg?aki_policy=profile_x_medium' class='popRoomLandlord'></image>
+        <view class='popRoomTitle'>整套房子/公寓·1卧1床1卫</view>
+        <view class='popRoomIntroduce'>【乐意公社】淮海路圣保罗公寓 上海百年…</view>
+        <view class='popRoomBottom'>
+          <view class='popRoomPrice'>￥420</view>
+          <view class='popRoomEvaluation'>
+            <image src='../../image/popRoom/star.png'></image>
+            <view class='popRoomEvaluationNumber'>125条评价</view>
+          </view>
+        </view>
+      </navigator>
+    </view>
+    <view class='topRoom'>
+      <swiper class='swiper' indicator-dots='true'>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/e282fd19-256c-4d49-ad2f-632fc6d5cc16.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/cca6d8c7-587a-47dd-84a6-7616bc2d1cc2.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/717fef15-755d-4d52-b9c4-ed12e2300db5.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+      </swiper>
+      <view class='popRoomTop'>TOP2</view>
+      <image class='popRoomLandlord' src='https://z1.muscache.cn/im/pictures/549ee949-2724-46a8-96f7-746443d64fc6.jpg?aki_policy=profile_x_medium' class='popRoomLandlord'></image>
+      <image src='../../image/popRoom/like.png' class='popRoomKeep'></image>
+      <view class='popRoomTitle'>独立房间·1卧1床1卫</view>
+      <view class='popRoomIntroduce'>Co-Living With Local 5min walk…</view>
+      <view class='popRoomBottom'>
+        <view class='popRoomPrice'>￥450</view>
+        <view class='popRoomEvaluation'>
+          <image src='../../image/popRoom/star.png'></image>
+          <view class='popRoomEvaluationNumber'>139条评价</view>
+        </view>
+      </view>
+    </view>
+    <view class='topRoom'>
+      <swiper class='swiper' indicator-dots='true'>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/64015832/e10b10f8_original.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/10833886/1edf8559_original.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/79931548/ff75f30f_original.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+      </swiper>
+      <view class='popRoomTop'>TOP3</view>
+      <image class='popRoomLandlord' src='https://z1.muscache.cn/im/pictures/91c92a38-14be-4ec1-a33a-61fe6b5057af.jpg?aki_policy=profile_x_medium' class='popRoomLandlord'></image>
+      <image src='../../image/popRoom/like.png' class='popRoomKeep'></image>
+      <view class='popRoomTitle'>整套房子/公寓·1卧2床1卫</view>
+      <view class='popRoomIntroduce'>品质优选【象限】80平庭院复式洋房·巨幕…</view>
+      <view class='popRoomBottom'>
+        <view class='popRoomPrice'>￥790</view>
+        <view class='popRoomEvaluation'>
+          <image src='../../image/popRoom/star.png'></image>
+          <view class='popRoomEvaluationNumber'>172条评价</view>
+        </view>
+      </view>
+    </view>
+    <view class='topRoom'>
+      <swiper class='swiper' indicator-dots='true'>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/35836380/a9a49e5f_original.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/ac9e3d82-e064-4111-bd88-e9abb697ef1f.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/4ea/air/v2/pictures/301772a5-0a4b-4737-a23d-95a1f116e583.jpg?t=r:w1200-h720-sfit,e:fjpg-c90" class='popRoomImgs' />
+        </swiper-item>
+      </swiper>
+      <image class='popRoomLandlord' src='https://z1.muscache.cn/im/users/13392090/profile_pic/1403809266/original.jpg?aki_policy=profile_x_medium' class='popRoomLandlord'></image>
+      <image src='../../image/popRoom/like.png' class='popRoomKeep'></image>
+      <view class='popRoomTitle'>整套房子/公寓·2卧3床1卫</view>
+      <view class='popRoomIntroduce'>特价！【外滩美宿·Mar】亲子 榻榻米2居…</view>
+      <view class='popRoomBottom'>
+        <view class='popRoomPrice'>￥199</view>
+        <view class='popRoomEvaluation'>
+          <image src='../../image/popRoom/star.png'></image>
+          <view class='popRoomEvaluationNumber'>126条评价</view>
+        </view>
+      </view>
+    </view>
+    <view class='topRoom'>
+      <swiper class='swiper' indicator-dots='true'>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/9b0ae17d-7cfe-41bb-9a89-f38287f92c3a.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/4ea/air/v2/pictures/ef03bd2d-10d6-43f1-bb52-ea7a24dec4db.jpg?t=r:w1200-h720-sfit,e:fjpg-c90" class='popRoomImgs' />
+        </swiper-item>
+        <swiper-item>
+          <image mode="widthFix" src="https://z1.muscache.cn/im/pictures/a2e67090-8405-41a7-babc-817d877d6562.jpg?aki_policy=large" class='popRoomImgs' />
+        </swiper-item>
+      </swiper>
+      <image class='popRoomLandlord' src='https://z1.muscache.cn/im/pictures/9dbc78c6-101c-44da-a71c-fc77a121c0ad.jpg?aki_policy=profile_x_medium' class='popRoomLandlord'></image>
+      <image src='../../image/popRoom/like.png' class='popRoomKeep'></image>
+      <view class='popRoomTitle'>独立房间·1卧1床1卫</view>
+      <view class='popRoomIntroduce'>迪士尼附近的轻奢别墅Lion特惠房 迪士尼…</view>
+      <view class='popRoomBottom'>
+        <view class='popRoomPrice'>￥249</view>
+        <view class='popRoomEvaluation'>
+          <image src='../../image/popRoom/star.png'></image>
+          <view class='popRoomEvaluationNumber'>78条评价</view>
+        </view>
+      </view>
+    </view>
+  </view>
+
+
+</view>

@@ -1,0 +1,14 @@
+<view class='bigbox'>
+  <view class='topbox'>
+    <view>入住日期</view>
+    <view>0晚</view>
+    <view>退房日期</view>
+  </view>
+  </view>
+  <view class='save'>
+  <view>已选定0晚</view>
+  <view>保存</view>
+  </view>
+
+<calendar  calendar-style="calendar"  header-style="calendar-header"  board-style="calendar-board"
+ days-color="{{dayStyle}}" weeks-type="cn" binddayClick="dayClick"/>

@@ -1,0 +1,165 @@
+/* pages/navsearch/navsearch.wxss */
+/* pages/navsearch/navsearch.wxss */
+.search{
+  width: 100%;
+  border-bottom: 2rpx solid gainsboro;
+ 
+}
+.search-input{
+  margin: auto;
+  width: 90%;
+  height: 90rpx;
+   display: flex
+}
+.search-input image {
+  height: 50rpx;
+  width: 50rpx;
+  margin:20rpx auto;
+  padding-left: 220rpx;
+}
+
+.button{
+  width: 100%;
+  
+}
+.title{
+  width: 90%;
+  margin:40rpx auto;
+  font-weight: 600;
+}
+.type{
+  width: 90%;
+  margin: auto;
+}
+.type-city{
+  display: flex;
+  justify-content: space-between;
+  height: 60rpx;
+}
+.active{
+  color: rgb(4, 92, 92);
+  text-decoration:underline;
+}
+.type-city-name{
+  display: flex;
+ 
+}
+.name{
+  margin-right: 40rpx;
+}
+.house{
+  width: 90%;
+  margin: auto;
+  z-index: 100;
+}
+.house-message{
+  box-shadow: 1rpx 1rpx 4rpx rgb(228, 228, 228);
+  height: 718rpx;
+  margin-bottom: 40rpx;
+}
+.Landlord{
+  position: relative;
+  top: -450rpx;
+  left: 550rpx;
+
+}
+.Landlord image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  border: 4rpx solid rgb(173, 170, 170);
+}
+.house-title{
+font-weight:600;
+font-size:40rpx;
+height:120rpx;
+line-height:120rpx;
+color:#282929;
+
+}
+swiper image{
+  width: 100%;
+  border-top-left-radius: 14rpx;
+  border-top-right-radius: 14rpx;
+}
+.house-address{
+  width: 90%;
+  margin: 40rpx auto ;
+}
+.house-address view{
+  margin-top: 8rpx;
+}
+.house-one{
+color: #616161;
+font-size: 28rpx;
+display: flex;
+justify-content: left;
+}
+.house-two{
+  color: #2e2e2e;
+  font-size: 36rpx;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  width: 567rpx;
+  height: 48rpx;
+}
+.house-block{
+  background-color:#d1d4d1;
+  border-radius: 12rpx;
+  border: 2rpx solid  #0d0e0d;
+  margin: 10rpx 0;
+  margin-right: 30rpx;
+}
+.house-evalute{
+  display: flex;
+  height: 60rpx
+}
+.house-evalute image{
+  height: 40rpx;
+  width: 130rpx;
+  margin: 8rpx;
+}
+.house-price{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1rpx 1rpx 4rpx rgb(228, 228, 228);
+  height: 106rpx;
+}
+.price:first-child{
+  display: flex;
+  color: #0f6a64;
+  font-size: 35rpx;
+  line-height: 106rpx;
+}
+.ago-price{
+  color: grey;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+}
+.ago-price-{
+  color: #0f6a64;
+}
+.price-night{
+  color: grey;
+  margin-left: 10rpx;
+}
+.gou{
+  display: flex;
+  line-height: 106rpx;
+}
+.gou image{
+  height: 40rpx;
+  width: 40rpx;
+  margin: auto 10rpx;
+}
+.search-content{
+  width: 100%;
+  margin-top: 10rpx;
+  position:relative;
+top:-198rpx;
+left:0;
+
+}
+.box{
+  position: absolute;
+}

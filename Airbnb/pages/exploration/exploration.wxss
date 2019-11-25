@@ -1,0 +1,209 @@
+/* pages/exploration/exploration.wxss */
+/* pages/exploration/exploration.wxss */
+
+.exploration {
+  width: 100%;
+}
+
+.nav {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: white;
+}
+
+.box {
+  height: 200rpx;
+}
+
+.nav-top {
+  width: 90%;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.input {
+  width: 500rpx;
+  height: 90rpx;
+  background-color: rgba(173, 173, 173, 0.041);
+  border-radius: 6rpx;
+  border: 2rpx solid grey;
+  display: flex;
+  box-shadow: 1rpx 1rpx 4rpx gray;
+}
+
+.input image {
+  height: 50rpx;
+  width: 50rpx;
+  margin: auto;
+}
+
+.nav-input {
+  height: 90rpx;
+  width: 400rpx;
+}
+
+.map {
+  height: 90rpx;
+  width: 150rpx;
+  padding-left: 40rpx;
+  display: flex;
+}
+
+.map image {
+  height: 50rpx;
+  width: 50rpx;
+  margin: auto;
+}
+
+.map-font {
+  line-height: 90rpx;
+}
+
+.nav-bottom {
+  width: 90%;
+  display: flex;
+  height: 100rpx;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.nav-bottom view {
+  display: flex;
+}
+
+.nav-bottom-font {
+  line-height: 100rpx;
+  font-weight: 500;
+}
+
+.Triangle-top {
+  border-bottom: 10rpx solid transparent;
+  border-top: 10rpx solid black;
+  border-left: 9rpx solid transparent;
+  border-right: 9rpx solid transparent;
+  margin: 50rpx 8rpx;
+}
+
+.type-content {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.type-content-block {
+  border-radius: 22rpx;
+  height: 50rpx;
+  width: 120rpx;
+  text-align: center;
+  border: 2rpx solid #0f6a64;
+  line-height: 50rpx;
+  font-size: 26rpx;
+}
+.house{
+  width: 90%;
+  margin: auto;
+}
+.house-message{
+  box-shadow: 1rpx 1rpx 4rpx rgb(228, 228, 228);
+  height: 718rpx;
+  margin-bottom: 40rpx;
+}
+.Landlord{
+  position: relative;
+  top: -450rpx;
+  left: 550rpx;
+
+}
+.Landlord image{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50rpx;
+  border: 4rpx solid rgb(173, 170, 170);
+}
+.house-title{
+font-weight:600;
+font-size:40rpx;
+height:120rpx;
+line-height:120rpx;
+color:#282929;
+
+}
+swiper image{
+  width: 100%;
+  border-top-left-radius: 14rpx;
+  border-top-right-radius: 14rpx;
+}
+.house-address{
+  width: 90%;
+  margin: 40rpx auto ;
+}
+.house-address view{
+  margin-top: 8rpx;
+}
+.house-one{
+color: #616161;
+font-size: 28rpx;
+display: flex;
+justify-content: left;
+}
+.house-two{
+  color: #2e2e2e;
+  font-size: 36rpx;
+  text-overflow:ellipsis;
+  overflow:hidden;
+  width: 567rpx;
+  height: 48rpx;
+}
+.house-block{
+  background-color:#d1d4d1;
+  border-radius: 12rpx;
+  border: 2rpx solid  #0d0e0d;
+  margin: 10rpx 0;
+  margin-right: 30rpx;
+}
+.house-evalute{
+  display: flex;
+  height: 60rpx
+}
+.house-evalute image{
+  height: 40rpx;
+  width: 130rpx;
+  margin: 8rpx;
+}
+.house-price{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 1rpx 1rpx 4rpx rgb(228, 228, 228);
+  height: 106rpx;
+}
+.price:first-child{
+  display: flex;
+  color: #0f6a64;
+  font-size: 35rpx;
+  line-height: 106rpx;
+}
+.ago-price{
+  color: grey;
+  text-decoration: line-through;
+  margin-left: 10rpx;
+}
+.ago-price-{
+  color: #0f6a64;
+}
+.price-night{
+  color: grey;
+  margin-left: 10rpx;
+}
+.gou{
+  display: flex;
+  line-height: 106rpx;
+}
+.gou image{
+  height: 40rpx;
+  width: 40rpx;
+  margin: auto 10rpx;
+}

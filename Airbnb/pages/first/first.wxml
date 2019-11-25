@@ -1,0 +1,112 @@
+<!--pages/first/first.wxml-->
+<swiper class="swiper" autoplay='true' circular='true' interval="4000" duration='500'>
+  <block wx:for="{{swiper}}">
+    <swiper-item>
+      <view class="item">
+        <image src="{{item.url}}" mode="widthFix" class="qwe"></image>
+        <image src="../../pic/AirbnbWhite.png" class="asd" mode="widthFix"></image>
+        <view class="small">{{item.title}}</view>
+        <view class="big">{{item.smalltitle}}</view>
+      </view>
+    </swiper-item>
+  </block>
+</swiper>
+
+<view class="none"></view>
+<view class="search">
+  <view class="content1">
+    <view class="city">成都市</view>
+    <view class="date">
+      <view>10月11日</view>
+      <view class="day">1晚</view>
+      <view>10月12日</view>
+    </view>
+    <button type="button"  bindtap='houseInfor'>查找房源</button>
+  </view>
+</view>
+
+<view class="autumn">
+  <view class="word">秋季特惠房源</view>
+  <view class="infor">低至8折，可叠加使用礼券</view>
+  <scroll-view class="scroll" enable-flex="true" scroll-x="true">
+    <block wx:for="{{city}}">
+      <view class="{{current==index?'change':'block'}}" id="item-{{index}}" data-set="{{item.cityid}}" bindtap="click">{{item.city}}</view>
+    </block>
+  </scroll-view>
+
+  <view class="house">
+    <block wx:for="{{cityhouse}}">
+      <view class="pichouse">
+       <navigator url='../house/house'> <image mode="widthFix" src="{{item.url}}"></image></navigator>
+        <view class="type">{{item.infor}}</view>
+        <view class="adress">{{item.adress}} </view>
+        <view class="price">
+          <view>{{item.price}}</view>
+          <view>{{item.preprice}}</view>
+          <view>每晚</view>
+        </view>
+      </view>
+    </block>
+    <view class="more" bindtap='houseInfor'>显示更多{{city[current].city}}的房源</view>
+  </view>
+</view>
+
+<view class="autumn">
+  <view class="word">热门目的地</view>
+  <scroll-view class="scroll" enable-flex="true" scroll-x="true">
+    <block wx:for="{{hotplace}}">
+      <view class="{{twocurrent==index?'change':'block'}}" id="item-{{index}}" data-set="{{item.cityid}}" bindtap="twoclick">{{item.hotplace}}</view>
+    </block>
+  </scroll-view>
+
+  <view class="house">
+    <block wx:for="{{hotplacehouse}}">
+      <view class="pichouse">
+        <image mode="widthFix" src="{{item.url}}"></image>
+        <view class="type">{{item.infor}}</view>
+        <view class="adress">{{item.adress}}</view>
+        <view class="price">
+          <view>{{item.price}}</view>
+          <view>{{item.preprice}}</view>
+          <view>每晚</view>
+        </view>
+      </view>
+    </block>
+    <view class="more" bindtap='houseInfor'>显示更多{{hotplace[twocurrent].hotplace}}的房源</view>
+  </view>
+</view>
+
+<view class="guard">
+  <view class="word">爱彼迎旅行保障</view>
+  <view class="page">
+    <view class="moldel">
+      <view class="airbnbpic">
+        <image src="https://z1.muscache.cn/airbnb/static/5308a6c455e5061137f8ae9e9a9ac4fc.png"></image>
+      </view>
+      <view  class="testa">
+        <text>安心房源保障</text>
+        <text>人工审核所有中国房源页面信息，入住更放心</text>
+      </view>
+    </view>
+
+    <view class="moldel">
+      <view class="airbnbpic">
+        <image src="https://z1.muscache.cn/airbnb/static/f142a9a066b66fcfea524d7c2f5dcf63.png"></image>
+      </view>
+      <view  class="testa">
+        <text>专业中文客服</text>
+        <text>(86)400-678-4008,010-123-456724小时服务</text>
+      </view>
+    </view>
+
+    <view  class="moldel">
+      <view class="airbnbpic">
+        <image src="https://z1.muscache.cn/airbnb/static/da0afd2d0100f3c056e5c6778c1bed22.png"></image>
+      </view>
+      <view class="testa">
+        <text>旅行安全保障</text>
+        <text>多重风险控制设计，全方位保障您的行程安全</text>
+      </view>
+    </view>
+</view>
+</view>

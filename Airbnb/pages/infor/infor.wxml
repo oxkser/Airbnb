@@ -1,0 +1,9 @@
+<!--pages/infor/infor.wxml-->
+<view class="main">
+    <view class="word1">收件箱</view>
+    <view class="word2">登录爱彼迎，随时地查看你和房东的交流信息</view>
+    <image class="bg-img" mode="widthFix" src='../../images/message-bgimg.jpg'></image>
+      <navigator url="../exploration/exploration">
+    <view class="button"hover-class="bg-color">开始探索</view>
+     </navigator>
+</view>

@@ -1,0 +1,65 @@
+<!--pages/popRoomMore/popRoonMore.wxml-->
+<!--pages/popRoomMore/popRoomMore.wxml-->
+<navigator open-type="navigateBack">
+    <view class='bor'>
+      <image src='/images/fanhui.png'></image>
+    </view>
+  </navigator>
+<view class='top'>
+  <swiper class='swiper' autoplay='true' interval="3000">
+    <block wx:for="{{room}}">
+      <block wx:for="{{item.item}}">
+        <swiper-item>
+          <image mode="widthFix" src="{{item.swiperimg}}" class='popRoomImgs' />
+        </swiper-item>
+      </block>
+    </block>
+  </swiper>
+</view>
+<block wx:for="{{room}}">
+  <view class='content'>
+    <view class='checkIn'>{{item.checkIn}}</view>
+    <view class='save'></view>
+    <view class='share'></view>
+    <view class='contentTitle'>{{item.contentTitle}}</view>
+    <view class='contentIntroduce'>{{item.contentIntroduce}}</view>
+  </view>
+  <view class='tags'>
+    <view class='score'>{{item.score}}</view>
+    <view class='nice'>{{item.nice}}</view>
+    <view class='tagsItem'>{{item.tagsItem1}}</view>
+    <view class='tagsItem'>{{item.tagsItem2}}</view>
+    <view class='tagsItem'>{{item.tagsItem3}}</view>
+    <view class='tagsItem'>{{item.tagsItem4}}</view>
+  </view>
+  <view class='person'>{{item.person}}</view>
+  <view class='priceDisCount'>
+    <text class='priceDisCountOne'>{{item.priceDisCountOne}} </text> {{item.priceDisCountOneNostyle}}
+  </view>
+  <view class='roomIntroduce'>
+    <view class='roomIntroduce-room'>{{item.roomIntroduceRoom}}</view>
+    <image src='../../image/roomMore/bed.png' class='roomIntroduce-bedImage'></image>
+    <view class='roomIntroduce-bed'>{{item.roomIntroduceBed}}</view>
+  </view>
+  <view class='roomPosition'>{{item.roomPosition}}</view>
+  <view class='readMore'>{{item.readMore}}</view>
+  <view class='roomTips'>
+    <block wx:for="{{item.item}}">
+      <view class='roomTipsText'>
+        <text>{{item.roomTipsText}}</text>{{item.roomTipsTextNostyle}}
+      </view>
+    </block>
+  </view>
+  <view class='cover'></view>
+  <view class='bottomFixed'>
+    <view class='bottomFixed-left'>
+      <text class='bottomFixed-left-price'>￥234</text> 每晚
+      <view class='bottomFixed-left-priceMore'> 价格明细</view>
+      <view class='bottomFixed-left-item'>
+        <image src='../../image/popRoom/star.png'></image>
+        <view class='bottomFixed-left-item-comment'>126</view>
+      </view>
+    </view>
+    <navigator url='../index/index'><view class='bottomFixed-right'>查看可订日期</view></navigator>
+  </view>
+</block>

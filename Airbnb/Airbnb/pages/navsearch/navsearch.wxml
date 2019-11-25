@@ -1,0 +1,65 @@
+<!--pages/navsearch/navsearch.wxml-->
+<!--pages/navsearch/navsearch.wxml-->
+<view class='search'>
+  <input class='search-input' placeholder='输入目的地、城市或景点' bindinput='search'>
+  <image src='../images/search.png'  bindtap='ok' />
+  </input>
+</view>
+<view class='button '>
+  <view class='title'>热门目的房源</view>
+
+    <view class='type'>
+      <view class='type-city' enable-flex="{{true}}">
+        <block wx:for="{{city}}">
+        <view class=" {{active==index?'active': ''}}" bindtap="changeCurrent" data-index="{{index}}">{{item.title}}</view>
+          </block>
+      </view>
+      <view class='type-city-name'>
+      <block wx:for="{{city}}">
+      <view class='name'>{{item.name}}</view>
+      </block>
+      </view>
+    </view>
+</view>
+<view class='search-content'>
+<view class='house'>
+<block wx:for="{{address}}">
+    <view class='house-message'>
+      <view class='house-picture'>
+              <swiper indicator-dots='true' indicator-active-color='white' circular='true'>
+        <block wx:for="{{picture[index]}}">
+          <swiper-item>
+            <image mode='widthFix' src='{{item.picture}}' />
+          </swiper-item>
+          </block>
+        </swiper>
+        <view class='house-address'>
+          <view class='house-one'>{{item.housemessage}}</view>
+          <view class='house-two'>{{item.introduce}}</view>
+          <view class='house-one'>
+            <view class='house-block'>{{item.houselogo}}</view>
+            <view class='house-block'>{{item.houselogo2}}</view>
+          </view>
+          <view class='house-evalute'>
+            <image src='../images/start.png' />
+            <view class='ev-number'>{{item.number}}条评价</view>
+          </view>
+        </view>
+        <view class='house-price'>
+          <view class='price'>
+            <view>￥{{item.nowprice}}</view>
+            <view class='ago-price'>￥{{item.oldprice}}</view>
+            <view class='ago-price-'>每晚</view>
+          </view>
+          <view class='gou'>
+          <image src='../images/gou.png'/>
+          <view>{{item.discount}}</view>
+          </view>
+        </view>
+          <view class='Landlord '><image src='{{item.landlord}}' /></view>
+      </view>
+    </view>
+  
+</block>
+</view>
+</view>

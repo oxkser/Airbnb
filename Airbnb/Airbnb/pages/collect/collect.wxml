@@ -1,0 +1,17 @@
+<!--pages/collect/collect.wxml-->
+
+<!-- <view class="container"> -->
+<view class="nav-top">
+  <view class="nav-top-l" hover-class='border' hover-stay-time="1000">我的收藏</view>
+  <view class="nav-top-r" hover-class='border' hover-stay-time="1000" bindtap="changepage2">热门收藏</view>
+</view>
+<view class="main">
+  <view class="word1">收藏的房源</view>
+  <view class="word2">登录爱彼迎小程序，随时地查看和收藏心仪房源。收藏后还可以与好友分享心愿单，投票选房，计划旅行更便利。</view>
+  <image class="bg-img" mode="widthFix" src='../../images/collect-bgimg.jpg'></image>
+    <navigator url="../exploration/exploration">
+  <view class="button" hover-class='bg-color'>开始探索</view>
+   </navigator>
+</view>
+
+<!-- </view> -->

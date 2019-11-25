@@ -1,0 +1,60 @@
+<!--pages/mine/mine.wxml-->
+<block wx:if="{{!hasUserInfo}}">
+  <!-- <view class="container"> -->
+    <view class="nav-top">
+      <navigator open-type="navigate" url='../login/login'>
+        <view class="nav-top-l" hover-class='bg-color'>注册或登录</view>
+      </navigator>
+      <image class="nav-top-r" src='https://z1.muscache.cn/defaults/user_pic-50x50.png?v=3'></image>
+    </view>
+    <view class="main">
+      <swiper class="swiper" indicator-dots="true" indicator-color="#F0F0F0" indicator-active-color="#03828C" autoplay="true" circular="true">
+        <swiper-item>
+          <image src='../../images/swiper1.jpg'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../../images/swiper2.jpg'></image>
+        </swiper-item>
+        <swiper-item>
+          <image src='../../images/swiper3.jpg'></image>
+        </swiper-item>
+      </swiper>
+    </view>
+    <view class="nav-bottom"> 联系我们
+    </view>
+  <!-- </view> -->
+</block>
+<block wx:else>
+  <view class="container1">
+    <view class="top-nav">
+      <view class="userName">{{userName}}</view>
+      <image class="userImg" src='{{userImgUrl}}'></image>
+    </view>
+    <view class="main1">
+      <view>
+        <view class="main1-word">我的房源订单</view>
+        <view class="main1-item">
+          <view><image src='../../images/order/order1.png'></image><view>全部订单</view></view>
+          <view><image src='../../images/order/order2.png'></image><view>有效订单</view></view>
+          <view><image src='../../images/order/order3.png'></image><view>待支付订单</view></view>
+        </view>
+      </view>
+      <view>
+        <view class="main1-word">礼券中心</view>
+        <view class="main1-item">
+          <view><image src='../../images/gift/gift1.png'></image><view>礼金券</view></view>
+          <view><image src='../../images/gift/gift2.png'></image><view>旅行基金</view></view>
+          <view><image src='../../images/gift/gift3.png'></image><view>邀请好友</view></view>
+        </view>
+      </view>
+      <view>
+        <view class="main1-word">工具</view>
+        <view class="main1-item">
+          <view><image src='../../images/tools/tools1.png'></image><view>联系客服</view></view>
+          <view><image src='../../images/tools/tools2.png'></image><view>反馈</view></view>
+          <view></view>
+        </view>
+      </view>
+    </view>
+  </view>
+</block>

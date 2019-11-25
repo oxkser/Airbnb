@@ -1,0 +1,193 @@
+<view class='bigbox' style='overflow:{{hidden}}'>
+  <navigator open-type="navigateBack">
+    <view class='bor'>
+      <image src='/images/fanhui.png'></image>
+    </view>
+  </navigator>
+  <!--pages/house/house.wxml-->
+  <view class='banner'>
+    <swiper autoplay="{{true}}" circular="{{true}}">
+      <block wx:for="{{data2}}">
+        <swiper-item>
+          <image src="{{data2[index].image_src}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='iconfont'>
+      <view class='icon1'>
+        <image src='/images/xin.png'></image>
+      </view>
+      <view class='icon2'>
+        <image src='/images/fenxiang.png'></image>
+      </view>
+    </view>
+    <view class='font'>
+      <view class='fontbox'>
+        <text class='one'>入住-退房</text>
+        <navigator url='../index/index'>
+          <text class='two'>添加日期</text>
+        </navigator>
+      </view>
+    </view>
+  </view>
+  <view class='address-infor'>{{address}}</view>
+  <view class='housebox'>
+    <text class='house-name'>{{house_name}}</text>
+    <text class='bed'>{{bed}}</text>
+  </view>
+  <view class='displaybox'>
+    <view class='score'>{{data3.score}}</view>
+    <view class='car'>{{data3.car}}</view>
+    <view class='food'>{{data3.food}}</view>
+    <view class='washer'>{{data3.washer}}</view>
+  </view>
+  <text class='supply'>{{data3.supply}}</text>
+  <view class='views'>
+    <view class='three'>
+      <image src='/images/dengpao.png'></image>
+    </view>
+    <view class='views-infor'>
+      <text class='bold'>这个房源备受关注。</text>
+      <text>过去一周的浏览量为<text class='views-num'>{{views}}</text>次。</text>
+    </view>
+  </view>
+  <view class='bedroom'>
+    <view class='bedname'>卧室1</view>
+    <image src='/images/shi.png'></image>
+    <view class='bedroom-infor'>{{bedroom}}</view>
+  </view>
+  <view class='house-inforbox'>
+    <view class='house-infor'>
+      {{house_infor}}
+    </view>
+    <!-- 跳转到房屋展示页面 -->
+    <view class='more' bindtap='houseInfor'>查看更多房源介绍</view>
+  </view>
+  <view class='information'>
+    <view class='house-type'>
+      <image src='/images/fangwu.png'></image>
+      <view class='house-inform'>
+        <text class='bold'>平房里的独立房间</text>
+        <text class='infor-house'>有独立房间，与房东或房客分享合用空间</text>
+      </view>
+    </view>
+    <view class='time'>
+      <image src='/images/outtime.png'></image>
+      <view class='time-type'>
+        <text class='bold'>入住/退房</text>
+        <text class='time-infor'>入住时间14:00-02:00（次日）·退房时间11:00</text>
+      </view>
+    </view>
+  </view>
+  <view class='picture'>
+    <view>
+      <image src='/images/tingche.png'></image>
+      <view>免费停车位</view>
+    </view>
+    <view>
+      <image src='/images/7.png'></image>
+      <view>早餐</view>
+    </view>
+    <view>
+      <image src='/images/wuxianwangluo.png'></image>
+      <view>无线网络</view>
+    </view>
+    <view class='moreinfor'>
+      <view>+27</view>
+      <view>更多设施</view>
+    </view>
+  </view>
+  <view class='estimate'>
+    <view class='estimate_h1'>房客评价</view>
+    <view class='display-img'>
+      <view>
+        <image src='/images/touxiang.jpg '></image>
+      </view>
+      <view class='owner'>
+        <view class='name'>Duaiduai</view>
+        <view class='publish-time'>2019年09月</view>
+      </view>
+    </view>
+    <view class='infor-estimate'>{{data5.view_comment}}</view>
+    <view class="estimatebox">
+      <!-- 跳转到评价页面 -->
+      <view bindtap='Estimate'>查看显示全部{{data4.estimate_num}}条房客真实评价</view>
+      <view class='star'>
+        <block wx:for="{{[1,1,1,1,1]}}">
+          <image src='/images/iconstart.png'></image>
+        </block>
+      </view>
+    </view>
+  </view>
+  <view class='house_address'>
+    <view>房源位置</view>
+    <view class='more_address'>
+      <view>{{data6.address_name}}</view>
+      <view>{{data6.address_infor}}</view>
+      <!-- 跳转到房源展示底部小页面 -->
+      <view bindtap='Address'>查看更多</view>
+    </view>
+    <view class='tarvel'>
+      <!-- 跳转到出行详情底部小页面 -->
+      <view>出行信息</view>
+      <view class='tarvel_infor'>{{data6.travel_infor}}</view>
+      <view bindtap='Tarvel'>查看更多</view>
+    </view>
+  </view>
+  <view class='asked'>
+    <view>预订须知</view>
+    <view class='cancel'>
+      <view class='cancelbox'>
+        <text>取消政策</text>{{data7.cancel}}</view>
+      <view bindtap='Cancel'>查看详情</view>
+    </view>
+    <view class='safe'>
+      <view class='safebox'>
+        <text>安全须知</text>{{data7.safe}}
+      </view>
+    </view>
+    <view class='tip'>
+      <view class='tipbox'>
+        <text>交易提示</text>{{data7.tip}}</view>
+      <view bindtap='Tip'>查看详情</view>
+    </view>
+  </view>
+  <view class='owner_inforbox'>
+    <view>房东介绍</view>
+    <view class='owner_img'>
+      <image src='https://z1.muscache.cn/im/pictures/1e2569ae-55fc-4be0-b270-fb40928f2555.jpg?aki_policy=profile_x_medium'></image>
+      <view class='owner_infor'>
+        <view>田</view>
+        <view>收到87条评价·已验证</view>
+      </view>
+    </view>
+    <view class='more_introduce'>
+      <view>嗨，我是房东。很高兴能分享我的房源，广角世界各地的朋友！</view>
+      <view>查看更多房东介绍</view>
+    </view>
+    <view class='phone_num'>联系房东</view>
+  </view>
+  <view class='money_box'>
+    <view class='left_box'>
+      <text>￥{{data1.money}}</text>每晚
+      <view class='money_infor'>价格明细</view>
+      <view class='star'>
+        <block wx:for="{{[1,1,1,1,1]}}">
+          <image src='/images/iconstart.png'></image>
+        </block>
+      </view>
+    </view>
+    <view class='right_box'>
+      <!-- 跳转到日历页面 -->
+      <view class='button'>
+        <navigator url='/pages/index/index' hover-class="navigator-hover">查看可定日期</navigator>
+      </view>
+    </view>
+  </view>
+  <view class='hidden_housebox' style='display:{{display}}' bindtap="click">
+    <view class='hidden_house'>
+      <view>{{data6.address_name}}</view>
+      <view>{{datas}}</view>
+    </view>
+  </view>
+</view>
